@@ -1,0 +1,151 @@
+:: StoryTitle
+GameJam
+
+
+:: StoryData
+{
+  "ifid": "5071A6DD-1D70-4C33-BFAF-AEA21D2E9E3F",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Contexte",
+  "tag-colors": {
+    "startup": "orange"
+  },
+  "zoom": 1
+}
+
+
+:: Comme quoi? {"position":"800,50","size":"100,100"}
+''Mentor''
+On est tous en binôme, parce qu’on a tous besoin que quelqu’un couvre nos arrières à un moment ou un autre. Ne laisse pas ton binôme derrière.
+
+
+
+:: Contexte {"position":"100,250","size":"100,100"}
+''Narration'' 
+Aix-en-Provence, 5 Mai 2076. Paroisse Cathédrale Saint Sauveur. Incendie en cours.
+
+''Sergent 1''
+Le petit nouveau!
+
+''Narration''
+La douce voix du Sergent(ironie) m’interpelle alors que je connecte le tuyau à la borne incendie. Le Sergent semble déterminé à ne pas apprendre mon nom alors que j’ai été assigné à son équipe il y a déjà 3 jours.
+
+''Sergent 1''
+Du nerf, le feu ne va pas s’éteindre tout seul! Cathy, Sam, on a une victime à l’intérieur côté Ouest!
+
+''Narration ''
+Mais! Je suis juste à côté de l’entrée. Je suis devenu pompier pour sauver des vies, pas pour me faire appeler le petit nouveau par une vieille branche.
+
+''Narration''
+Quelqu’un a besoin d’aide.
+
+' 'Choix' '
+[[Prévenir le sergent (Sergent positif)]]
+[[Faire ses preuves]]
+
+
+:: Faire ses preuves {"position":"300,325","size":"100,100"}
+(set: $AvisSergent to it - 1)
+[[Introduction Mentor]] 
+
+
+:: Introduction Mentor {"position":"500,250","size":"100,100"}
+''Narration''
+Je cours vers la porte principale et essaye de l’ouvrir. La porte résiste. 
+
+''Narration''
+Alors je donne un coup d’épaule dedans. Les gonds de la porte cédent et mon élan m'entraîne dans la chute de la porte.
+
+''Narration''
+L’appel d’air créé par la chute de la porte propage le feu qui embrase la porte d’un seul coup. Je ferme les yeux face à la chaleur et la brûlure imminente.
+
+''Narration''
+Mon souffle est coupé par ma ceinture qui me soulève soudainement, me faisant ouvrir les yeux. L’air autour est beaucoup plus frais.
+(note : peut-être un effet pour fermer et ouvrir les yeux plutôt que d’avoir à le dire)
+
+''Mentor''
+Bwahahaha, c’est gentil d’offrir un barbecue pour ta première intervention petit, mais je suis végétarien!
+
+''Narration''
+La visière de mon casque est descendue alors par une grande main juste avant que je sois lâché, m'écrasant sans aucune grâce dans l’herbe.
+
+''Narration''
+Je relève la tête pour voir mon sauveur.
+
+''Mentor''
+Rien de cassé petit?
+
+''Choix''
+[[Je maîtrisais la situation.]] 
+[[Merci]]
+
+
+:: Je maîtrisais la situation. {"position":"625,150","size":"100,100"}
++1 débilité
+''Pompier1 sapeur''
+Et quelle situation est-ce que tu maîtrisais exactement? Celle avant que tu touches à la porte ou celle où tu as embrasé les flammes qu’on essayait de contenir?
+
+''Mentor''
+Vouloir aider, c’est une bonne chose, mais n’en fais pas une question de fierté. Tout le monde fait des erreurs, le tout c’est d’en tirer une leçon.
+
+''Choix''
+[[Comme quoi?]]
+[[J’ai saisi, ne pas désobéir au Sergent.]]
+
+
+
+:: Je pense que je suivrais les ordres la prochaine fois. {"position":"800,325","size":"100,100"}
+''Mentor''
+C’est  aussi une option.
+
+
+
+:: J’ai saisi, ne pas désobéir au Sergent. {"position":"800,175","size":"100,100"}
+''Mentor''
+Je pensais plutôt à ne pas essayer de manger les flammes, mais c’est pas mal non plus.
+
+''Mentor''
+Aussi, on est un binôme toi et moi, la prochaine fois que tu auras envie de faire un truc stupide, donne moi une chance de t’accompagner.
+
+
+
+:: Merci {"position":"625,350","size":"100,100"}
+''Mentor''
+Je suis proche de la retraite, pas question qu’un petit gars la prenne avant moi. Et puis ça m’aurait fait de la paperasse à remplir.
+
+''Héros''
+Rassurant.
+
+''Mentor''
+Je suis ton binôme petit, la prochaine fois que t’as une idée du genre, tu m’en touches deux mots avant de te lancer, ok?
+
+''Choix''
+[[Ok. (fist bump)]]
+[[Je pense que je suivrais les ordres la prochaine fois.]]
+
+
+
+:: Ok. (fist bump) {"position":"800,450","size":"100,100"}
+''Mentor''
+(fist bump)
+
+
+
+:: Prévenir le sergent (Sergent positif) {"position":"300,175","size":"100,100"}
+(set: $AvisSergent to it + 1)
+''Héro''
+Sergent je suis plus proche, je m’en occupe!
+
+''Sergent 1''
+Hey petit! Je ne t’ai pas dit d’y aller!
+
+[[Introduction Mentor]] 
+
+
+:: Variables [startup] {"position":"100,75","size":"100,100"}
+(set: $courage to 0)
+(set: $AvisSergent to 0)
+(set: $AvisMentor to 0)
+(set: $AvisVillain to 0)
+(set: $AvisPompier1 to 5)
