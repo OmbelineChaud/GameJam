@@ -19,6 +19,7 @@ GameJam
 ''Mentor''
 On est tous en binôme, parce qu’on a tous besoin que quelqu’un couvre nos arrières à un moment ou un autre. Ne laisse pas ton binôme derrière.
 
+[[Réprimander]]
 
 
 :: Contexte {"position":"100,250","size":"100,100"}
@@ -47,7 +48,7 @@ Quelqu’un a besoin d’aide.
 
 :: Faire ses preuves {"position":"300,325","size":"100,100"}
 (set: $AvisSergent to it - 1)
-[[Introduction Mentor]] 
+[[Introduction Mentor]]
 
 
 :: Introduction Mentor {"position":"500,250","size":"100,100"}
@@ -94,11 +95,11 @@ Vouloir aider, c’est une bonne chose, mais n’en fais pas une question de fie
 [[J’ai saisi, ne pas désobéir au Sergent.]]
 
 
-
 :: Je pense que je suivrais les ordres la prochaine fois. {"position":"800,325","size":"100,100"}
 ''Mentor''
 C’est  aussi une option.
 
+[[Réprimander]]
 
 
 :: J’ai saisi, ne pas désobéir au Sergent. {"position":"800,175","size":"100,100"}
@@ -108,6 +109,7 @@ Je pensais plutôt à ne pas essayer de manger les flammes, mais c’est pas mal
 ''Mentor''
 Aussi, on est un binôme toi et moi, la prochaine fois que tu auras envie de faire un truc stupide, donne moi une chance de t’accompagner.
 
+[[Réprimander]]
 
 
 :: Merci {"position":"625,350","size":"100,100"}
@@ -125,11 +127,11 @@ Je suis ton binôme petit, la prochaine fois que t’as une idée du genre, tu m
 [[Je pense que je suivrais les ordres la prochaine fois.]]
 
 
-
 :: Ok. (fist bump) {"position":"800,450","size":"100,100"}
 ''Mentor''
 (fist bump)
 
+[[Réprimander]]
 
 
 :: Prévenir le sergent (Sergent positif) {"position":"300,175","size":"100,100"}
@@ -140,7 +142,13 @@ Sergent je suis plus proche, je m’en occupe!
 ''Sergent 1''
 Hey petit! Je ne t’ai pas dit d’y aller!
 
-[[Introduction Mentor]] 
+[[Introduction Mentor]]
+
+
+:: Réprimander {"position":"1000,250","size":"100,100"}
+''Sergent 1''
+A quoi est-ce que tu pensais exactement?! Lorsqu’un supérieur te donne des ordres, il faut les suivre! Si tu avais 
+
 
 
 :: Variables [startup] {"position":"100,75","size":"100,100"}
