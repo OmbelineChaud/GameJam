@@ -157,9 +157,21 @@ A quoi est-ce que tu pensais exactement?! Tu testes la réaction du service admi
 Tu es toujours en période probatoire. On est pas ici pour jouer, si tu n’as pas l’intention de suivre les ordres, je te conseille fortement de reconsidérer ton choix de carrière. Des vies dépendent de notre capacité à travailler en équipe, autant celles des civils que de tes collègues.
 
 
+:: StoryCaption {"position":"250,50","size":"100,100"}
+<img src="https://static.vecteezy.com/system/resources/thumbnails/026/136/046/small/business-man-illustration-ai-generative-png.png" style="width: 100%; border: 2px solid white;">
+
+### Statistiques
+
+
 :: Variables [startup] {"position":"100,75","size":"100,100"}
 (set: $courage to 0)
 (set: $AvisSergent to 0)
 (set: $AvisMentor to 0)
 (set: $AvisVillain to 0)
 (set: $AvisPompier1 to 5)
+
+
+:: StoryStylesheet [stylesheet]
+tw-sidebar{
+	background-color: #ff0000;
+}
