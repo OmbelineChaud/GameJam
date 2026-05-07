@@ -25,10 +25,10 @@ On est tous en binôme, parce qu’on a tous besoin que quelqu’un couvre nos a
 :: Contexte {"position":"100,250","size":"100,100"}
 ''Narration'' 
 Aix-en-Provence, 5 Mai 2076. Paroisse Cathédrale Saint Sauveur. Incendie en cours.
-
+(click: ?Page)[
 ''Sergent 1''
 Le petit nouveau!
-
+(click: ?Page)[
 ''Narration''
 La douce voix du Sergent(ironie) m’interpelle alors que je connecte le tuyau à la borne incendie. Le Sergent semble déterminé à ne pas apprendre mon nom alors que j’ai été assigné à son équipe il y a déjà 3 jours.
 
@@ -44,6 +44,8 @@ Quelqu’un a besoin d’aide.
 ' 'Choix' '
 [[Prévenir le sergent (Sergent positif)]]
 [[Faire ses preuves]]
+]
+]
 
 
 :: Faire ses preuves {"position":"300,325","size":"100,100"}
@@ -153,7 +155,6 @@ A quoi est-ce que tu pensais exactement?! Tu testes la réaction du service admi
 
 ''Sergent 1''
 Tu es toujours en période probatoire. On est pas ici pour jouer, si tu n’as pas l’intention de suivre les ordres, je te conseille fortement de reconsidérer ton choix de carrière. Des vies dépendent de notre capacité à travailler en équipe, autant celles des civils que de tes collègues.
-
 
 
 :: Variables [startup] {"position":"100,75","size":"100,100"}
