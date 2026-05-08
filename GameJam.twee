@@ -15,7 +15,29 @@ GameJam
 }
 
 
-:: Comme quoi? {"position":"800,50","size":"100,100"}
+:: Bah... Y'a eu un feu quoi. {"position":"1000,375","size":"100,100"}
+<!--Instinct -1-->
+''Hero''
+Bah… Y’a eu un feu quoi. Je sais pas ce que je suis supposé vous dire. (instinct -1)
+
+''Policier 1''
+Bon alors commençons avec les questions.
+
+[[Introduction interrogation]]
+
+
+:: C'était ma première intervention {"position":"1250,325","size":"100,100"}
+<!--Aura +1-->
+''Hero''
+Oui, c'était définitivement plus intense que ça n'aurait dû être.
+
+[[Fin Introduction Interrogation]]
+
+
+:: Comme quoi? {"position":"600,50","size":"100,100"}
+''Hero''
+Comme quoi?
+
 ''Mentor''
 On est tous en binôme, parce qu’on a tous besoin que quelqu’un couvre nos arrières à un moment ou un autre. Ne laisse pas ton binôme derrière.
 
@@ -30,51 +52,110 @@ Aix-en-Provence, 5 Mai 2076. Paroisse Cathédrale Saint Sauveur. Incendie en cou
 Le petit nouveau!
 (click: ?Page)[
 ''Narration''
-La douce voix du Sergent(ironie) m’interpelle alors que je connecte le tuyau à la borne incendie. Le Sergent semble déterminé à ne pas apprendre mon nom alors que j’ai été assigné à son équipe il y a déjà 3 jours.
+La douce voix du Sergent(ironie) vous interpelle alors que vous connectez le tuyau à la borne incendie. Le Sergent semble déterminé à ne pas apprendre votre nom alors que vous avez été assigné à son équipe il y a déjà 3 jours.
 
 ''Sergent 1''
 Du nerf, le feu ne va pas s’éteindre tout seul! Cathy, Sam, on a une victime à l’intérieur côté Ouest!
 
 ''Narration ''
-Mais! Je suis juste à côté de l’entrée. Je suis devenu pompier pour sauver des vies, pas pour me faire appeler le petit nouveau par une vieille branche.
+Vous êtes pourtant juste à côté de l’entrée, pourquoi le Sergeant ne vous envoie pas à l’intérieur? Vous êtes devenu pompier pour sauver des vies, pas pour vous faire appeler le petit nouveau par une vieille branche.
 
 ''Narration''
 Quelqu’un a besoin d’aide.
 
-' 'Choix' '
-[[Prévenir le sergent (Sergent positif)]]
+''Choix''
+[[Prévenir le sergent]]
 [[Faire ses preuves]]
 ]
 ]
 
 
-:: Faire ses preuves {"position":"300,325","size":"100,100"}
+:: Expert semble un peu exagérer. {"position":"1000,125","size":"100,100"}
+<!--+1 affection Policier1-->
+''Hero''
+Expert semble un peu exagérer.
+
+''Policier 1''
+Alors on va dire “plus informé” jusqu’à ce que je puisse dire expert alors...
+
+[[Introduction interrogation]]
+
+
+:: Faire ses preuves {"position":"225,325","size":"100,100"}
 (set: $AvisSergent to it - 1)
 [[Introduction Mentor]]
 
 
-:: Introduction Mentor {"position":"500,250","size":"100,100"}
+:: Fin Introduction Interrogation {"position":"1375,250","size":"100,100"}
 ''Narration''
-Je cours vers la porte principale et essaye de l’ouvrir. La porte résiste. 
+Agent POLICIER1 prend des notes sur sa tablette.
+
+''Policier 1''
+Je vois, quelque chose à ajouter? Plus de détails peut-être?
+
+''Hero''
+Non, je ne crois pas.
+
+''Policier 1 ''
+Je vais faire le tour du reste de votre équipe alors. Si jamais quelque chose vous revient, n’hésitez pas à me contacter. 
 
 ''Narration''
-Alors je donne un coup d’épaule dedans. Les gonds de la porte cédent et mon élan m'entraîne dans la chute de la porte.
+Agent POLICIER1 vous donne son numéro professionnel.
 
 ''Narration''
-L’appel d’air créé par la chute de la porte propage le feu qui embrase la porte d’un seul coup. Je ferme les yeux face à la chaleur et la brûlure imminente.
+Après avoir fait votre déclaration à la police, vous rentrez à la caserne avec votre équipe. Le Sergent vous ayant déjà fait une leçon de morale, le reste de l'équipe vous laisse tranquille.
 
 ''Narration''
-Mon souffle est coupé par ma ceinture qui me soulève soudainement, me faisant ouvrir les yeux. L’air autour est beaucoup plus frais.
-(note : peut-être un effet pour fermer et ouvrir les yeux plutôt que d’avoir à le dire)
+Vous êtes épuisé.
+
+
+
+:: Fin d'intervention {"position":"875,250","size":"100,100"}
+''Narration''
+Le reste de l’équipe continue à s’occuper du feu, vous essayez d’aider en leur passant l’équipement, sous le regard lourd de reproches du Sergeant.
+
+''Narration'' 
+La police arrive sur les lieux une fois le feu éteint. Les policiers attendent patiemment que l’équipe finisse pour aller leur parler et s’assurent que la zone est sécurisée en attendant.
+
+''Narration''
+Un des policiers s’approche de vous, sûrement parce que je ne suis pas occupé comme les autres.
+
+''Policier 1''
+Agent POLICIER1, Je ne crois pas vous avoir déjà vu. Est-ce que je pourrais avoir votre nom?
+
+''Hero''
+HERO_NOM_COMPLET. Je viens de finir ma formation et d’être affecté à cette équipe.
+
+''Policier 1''
+Je vois. Ravie de vous rencontrer, on se croisera de temps en temps après les incendies. C’est la procédure de vous poser des questions sur vos impressions des incendies, vous êtes les experts après tout.
+
+''Choix''
+[[Expert semble un peu exagérer.]]
+[[Je ferais de mon mieux pour aider.]]
+[[Bah... Y'a eu un feu quoi.]]
+
+
+:: Introduction Mentor {"position":"350,250","size":"100,100"}
+''Narration''
+Vous courrez vers la porte principale et essayez de l’ouvrir. La porte résiste malgré tout. 
+
+''Narration''
+Vous devez y mettre plus de force. Vous donnez un coup d’épaule dedans. Les gonds de la porte cédent et votre élan vous entraîne dans la chute de la porte.
+
+''Narration''
+L’appel d’air créé propage le feu qui embrase la porte d’un seul coup. Vous fermez les yeux face à la chaleur et à la brûlure imminente.
+
+''Narration''
+Votre souffle se fait couper par votre ceinture alors que vous êtes soulevé. Vous ouvrez les yeux, les alentours sont bien plus sombres et l’air autour de vous est beaucoup plus frais, vous vous sentez un peu confus.
 
 ''Mentor''
 Bwahahaha, c’est gentil d’offrir un barbecue pour ta première intervention petit, mais je suis végétarien!
 
 ''Narration''
-La visière de mon casque est descendue alors par une grande main juste avant que je sois lâché, m'écrasant sans aucune grâce dans l’herbe.
+La visière de votre casque est alors descendue par une grande main juste avant que vous ne soyez lâché, vous vous écrasez sans aucune grâce dans l’herbe.
 
 ''Narration''
-Je relève la tête pour voir mon sauveur.
+Vous relèvez la tête pour voir votre sauveur.
 
 ''Mentor''
 Rien de cassé petit?
@@ -84,8 +165,37 @@ Rien de cassé petit?
 [[Merci]]
 
 
-:: Je maîtrisais la situation. {"position":"625,150","size":"100,100"}
-+1 débilité
+:: Introduction interrogation {"position":"1125,250","size":"100,100"}
+''Policier 1''
+Est-ce que vous avez vu quelque chose durant le feu? Une personne ou un objet qui pourrait être la source?
+
+''Hero''
+Pas vraiment non.
+
+''Policier 1''
+Est-ce que le feu vous a semblé étrange?
+
+''Choix''
+[[C'était ma première intervention]]
+[[Oui]]
+
+
+:: Je ferais de mon mieux pour aider. {"position":"1000,250","size":"100,100"}
+<!--+1 affection Policier1-->
+''Hero''
+Je ferai de mon mieux pour aider. 
+
+''Policier 1''
+C’est apprécié. 
+
+[[Introduction interrogation]]
+
+
+:: Je maîtrisais la situation. {"position":"475,175","size":"100,100"}
+<!--+1 débilité-->
+''Hero''
+Je maîtrisais la situation.
+
 ''Pompier1 sapeur''
 Et quelle situation est-ce que tu maîtrisais exactement? Celle avant que tu touches à la porte ou celle où tu as embrasé les flammes qu’on essayait de contenir?
 
@@ -97,14 +207,20 @@ Vouloir aider, c’est une bonne chose, mais n’en fais pas une question de fie
 [[J’ai saisi, ne pas désobéir au Sergent.]]
 
 
-:: Je pense que je suivrais les ordres la prochaine fois. {"position":"800,325","size":"100,100"}
+:: Je pense que je suivrais les ordres la prochaine fois. {"position":"600,325","size":"100,100"}
+''Hero''
+Je pense que je suivrais les ordres la prochaine fois.
+
 ''Mentor''
 C’est  aussi une option.
 
 [[Réprimander]]
 
 
-:: J’ai saisi, ne pas désobéir au Sergent. {"position":"800,175","size":"100,100"}
+:: J’ai saisi, ne pas désobéir au Sergent. {"position":"600,175","size":"100,100"}
+''Hero''
+J'ai saisi, ne pas désobéir au Sergent.
+
 ''Mentor''
 Je pensais plutôt à ne pas essayer de manger les flammes, mais c’est pas mal non plus.
 
@@ -114,7 +230,11 @@ Aussi, on est un binôme toi et moi, la prochaine fois que tu auras envie de fai
 [[Réprimander]]
 
 
-:: Merci {"position":"625,350","size":"100,100"}
+:: Merci {"position":"475,325","size":"100,100"}
+<!--mentor opinion +1-->
+''Hero''
+Merci, je ne pensais pas que la porte allait céder.
+
 ''Mentor''
 Je suis proche de la retraite, pas question qu’un petit gars la prenne avant moi. Et puis ça m’aurait fait de la paperasse à remplir.
 
@@ -129,14 +249,29 @@ Je suis ton binôme petit, la prochaine fois que t’as une idée du genre, tu m
 [[Je pense que je suivrais les ordres la prochaine fois.]]
 
 
-:: Ok. (fist bump) {"position":"800,450","size":"100,100"}
-''Mentor''
-(fist bump)
+:: Ok. (fist bump) {"position":"600,450","size":"100,100"}
+opinion mentor +1
+''Hero''
+Ok.
+
+''Narration''
+Vous offrez un poing pour un check. 
+
+''Narration''
+Votre mentor accepte.
 
 [[Réprimander]]
 
 
-:: Prévenir le sergent (Sergent positif) {"position":"300,175","size":"100,100"}
+:: Oui {"position":"1250,175","size":"100,100"}
+<!--réponse honnête-->
+''Hero'' 
+C'était ma première intervention, je ne saurais pas vraiment ce qu'est la norme.
+
+[[Fin Introduction Interrogation]]
+
+
+:: Prévenir le sergent {"position":"225,175","size":"100,100"}
 (set: $AvisSergent to it + 1)
 ''Héro''
 Sergent je suis plus proche, je m’en occupe!
@@ -147,23 +282,38 @@ Hey petit! Je ne t’ai pas dit d’y aller!
 [[Introduction Mentor]]
 
 
-:: Réprimander {"position":"1000,250","size":"100,100"}
+:: Réprimander {"position":"750,250","size":"100,100"}
 ''Sergent 1''
 A quoi est-ce que tu pensais exactement?! Tu testes la réaction du service administratif sur le licenciement?
 
-''Pompier 3''Ça prend environ 6 mois. (voix lointaine)
+''Pompier 3''
+Ça prend environ 6 mois. (voix lointaine)
 
 ''Sergent 1''
 Tu es toujours en période probatoire. On est pas ici pour jouer, si tu n’as pas l’intention de suivre les ordres, je te conseille fortement de reconsidérer ton choix de carrière. Des vies dépendent de notre capacité à travailler en équipe, autant celles des civils que de tes collègues.
 
+''Sergent 1 ''(si a choisis de faire ses preuves)
+Te lancer tout seul sans prévenir personne, c'est le meilleur moyen que tu deviennes une victime supplémentaire à sauver. Tu as de la chance que MENTOR t’ai vu.
 
-:: StoryCaption {"position":"250,50","size":"100,100"}
+''Sergent 1 ''
+Nos ressources sont déjà limitées, je ne veux pas les utiliser pour poursuivre ma propre équipe. 
+
+''Sergent 1''
+Va vérifier le matériel du camion.
+
+''Narration''
+La vérification du matériel est toujours faite avant les opérations, il n’y a pas de nécessité de vérifier à nouveau durant une opération. Vous comprennez rapidement que vous venez de vous faire mettre au coin comme un gamin.
+
+[[Fin d'intervention]]
+
+
+:: StoryCaption {"position":"175,25","size":"100,100"}
 <img src="https://static.vecteezy.com/system/resources/thumbnails/026/136/046/small/business-man-illustration-ai-generative-png.png" style="width: 100%; border: 2px solid white;">
 
 ### Statistiques
 
 
-:: Variables [startup] {"position":"100,75","size":"100,100"}
+:: Variables [startup] {"position":"50,25","size":"100,100"}
 (set: $courage to 0)
 (set: $AvisSergent to 0)
 (set: $AvisMentor to 0)
