@@ -52,6 +52,52 @@ GameJam
 <</nobr>>
 
 
+:: Caserne {"position":"1500,250","size":"100,100"}
+Narration
+Mentor vous sert une tasse de thé, avec comme fond sonore les quelques éclats de voix venant du bureau du Lieutenant que le Sergent est allé voir.
+
+Narration
+ Vous soupçonnez que la conversation est orienté sur vous, même si rien de ce que vous n'avez entendu l'a confirmé.
+ 
+Mentor
+ Ne te mine pas le moral. Enfin fais le un peu au moins, ce que t'as fait était vraiment dangereux.
+ 
+Hero
+ Waouh, je me sens tellement mieux maintenant.
+ 
+Mentor
+ Le Sergent a l'air terrifiant, et il l'est.
+ 
+Hero
+ Mais? Y'a un mais, pas vrai?
+ 
+Mentor
+ Hm? Non, fais attention à ton comportement ou le Sergent commencera une procédure disciplinaire à ton encontre, ça fait pas génial sur le CV pour un novice de se prendre une procédure.
+ 
+Hero
+ Est-ce que tu essayes de me rassurer ou de me faire peur?
+ 
+Mentor
+J'ai pas encore décidé. Bois ton thé.
+ 
+<!--Si a dit que le feu n'était pas normal aux policiers -->
+Mentor
+ On m'a dit que tu avais trouvé le feu bizarre. Tu veux élaborer? 
+
+ [[Il était bizarre, c'est tout.]]
+ [[Je le pensais pas, je sais même pas ce que ce policier voulait dire.]]
+ 
+ <!-- Si a dit que c'était sa première intervention au policier-->
+ Mentor
+ Tu as dis quoi aux policiers qui sont venus t'interroger?
+ 
+Hero
+ Sur l'incendie? Je leur ai dit que c'était ma première intervention, je ne suis pas sûr de ce qu'il voulait.
+ 
+ [[Suivant]]
+
+
+
 :: Comme quoi? {"position":"600,50","size":"100,100"}
 <<nobr>>
 ''Hero''
@@ -133,6 +179,7 @@ GameJam
         <</linkappend>>
 </span>
 <</nobr>>
+[[Caserne]]
 
 
 :: Fin d'intervention {"position":"875,250","size":"100,100"}
@@ -180,6 +227,16 @@ GameJam
         <</linkappend>>
 </span>
 <</nobr>>
+
+
+:: Il était bizarre, c'est tout. {"position":"1625,175","size":"100,100"}
+Hero
+Il était bizarre, c'est tout.
+
+Mentor
+ Je vois, de mauvaise foi, hein?
+ 
+ [[Suivant]] 
 
 
 :: Introduction Mentor {"position":"350,250","size":"100,100"}
@@ -275,6 +332,20 @@ GameJam
         <</linkappend>>
 </span>
 <</nobr>>
+
+
+:: Je le pensais pas, je sais même pas ce que ce policier voulait dire. {"position":"1625,325","size":"100,100"}
+<!-- honnete +1-->
+Hero
+Je le pensais pas, je sais même pas ce que ce policier voulait dire.
+
+Mentor
+ Et moi qui pensais que le petit nouveau avait de l'instinct.
+ 
+Hero
+Comment ça? 
+
+[[Suivant]] 
 
 
 :: Je maîtrisais la situation. {"position":"475,175","size":"100,100"}
@@ -376,7 +447,6 @@ GameJam
 
 
 :: Ok. (fist bump) {"position":"600,450","size":"100,100"}
-
 <<set $log.push("<strong>Ok.(fist bump)<strong>")>>
 <<nobr>>
 ''Hero''
@@ -539,6 +609,54 @@ GameJam
 <<set $AvisMentor to 0>>
 <<set $AvisVillain to 0>>
 <<set $AvisPompier1 to 5>>
+
+
+:: Suivant {"position":"1775,275","size":"100,100"}
+Mentor
+ Après la plupart des incidents on te demandera si tu as vu quelque chose.
+ 
+Mentor
+ Si tu vois quelque chose c'est important de les tenir informer, on travaille avec eux pour déterminer lorsqu'il s'agit d'incendies criminels et monter un dossier. 
+ 
+Hero
+ Et ça arrive souvent? Que les incendies soient criminels je veux dire.
+ 
+Mentor
+ Habituellement non, mais de plus en plus ces derniers temps. On a une série d'incendies criminels depuis un moment.
+ 
+[[Un moment? Combien de temps exactement?]]
+[[Une mafia incendiaire est derrière le coup?]]
+
+
+
+:: Suivant2 {"position":"2050,275","size":"100,100"}
+Mentor
+ Ce que je veux dire c'est fait attention petit.
+ 
+<!--si affection > à je sais pas combien// 
+ J'aime bien les petits gars dans ton genre, tu me fais penser à mon fiston.
+
+
+
+:: Un moment? Combien de temps exactement? {"position":"1900,175","size":"100,100"}
+Hero
+Un moment? Combien de temps exactement?
+
+Mentor
+Quelques mois. On a quelques images, mais rien de concret. De mes derniers échanges avec l'inspecteur chargé de l'enquête, il suspecte que le pyromane agit seul.
+
+
+
+:: Une mafia incendiaire est derrière le coup? {"position":"1900,325","size":"100,100"}
+Hero
+Une mafia incendiaire est derrière le coup?
+
+Mentor
+ Qu'est-ce qu'une mafia incendiaire est supposé être?
+ 
+Hero
+ ('Une mafia qui aime commencer des incendies? )'(+1 affection avec mentor)[[Suivant2]]
+ ('Une organisation secrète maléfique.')(+2 affection avec mentor)[[Suivant2])
 
 
 :: zone code {"position":"100,625","size":"100,100"}
