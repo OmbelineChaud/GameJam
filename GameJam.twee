@@ -97,6 +97,30 @@ Hero
  [[Suivant]]
 
 
+:: Choix facile, sauve le. Je veux garder mon honneur sauf. {"position":"2800,325","size":"100,100"}
+Hero
+Choix facile, sauve le. Je veux garder mon honneur sauf.
+
+Mentor 
+Trop tard pour ça. C’était ta première impression.
+
+Pompier2
+Je savais qu'on était amis, j'avais pas réalisé à quel point.
+
+Narration
+POMPIER2 pose une main solemnelle sur votre épaule et prends un air dramatique.
+
+Hero
+Pitié
+
+Pompier2
+Moi aussi je risquerais ma vie pour toi.
+
+Narration
+POMPIER2 prétends essuyer une larme au coin de l'oeil avant de craquer de commencer à rire
+
+(Suivant)[[Suivant5]]
+
 
 :: Comme quoi? {"position":"600,50","size":"100,100"}
 <<nobr>>
@@ -229,6 +253,27 @@ Hero
 <</nobr>>
 
 
+:: Il a mis la tête dans les flammes, lui aussi? {"position":"2150,325","size":"100,100"}
+Hero
+Il a mis la tête dans les flammes, lui aussi?
+
+Mentor
+ Ah non, ça ne risque pas. Mon gamin sait que le feu est dangereux depuis qu'il est haut comme 3 pommes.
+
+(Il est pompier aussi?)[[Il est pompier aussi?]]
+(Quand j'étais gosse je disais que mon père était pompier,)[[Quand j'étais gosse je disais que mon père était pompier,]]
+
+
+:: Il est pompier aussi? {"position":"2300,175","size":"100,100"}
+Hero
+Il est pompier aussi?
+
+Mentor
+Non, mon grand aime bien bidouiller, il est ingénieur en quelque chose de trop compliqué pour un vieil homme comme moi.
+
+(suivant)[[Suivant3]]
+
+
 :: Il était bizarre, c'est tout. {"position":"1625,175","size":"100,100"}
 Hero
 Il était bizarre, c'est tout.
@@ -236,7 +281,7 @@ Il était bizarre, c'est tout.
 Mentor
  Je vois, de mauvaise foi, hein?
  
- [[Suivant]] 
+ [[Suivant]]
 
 
 :: Introduction Mentor {"position":"350,250","size":"100,100"}
@@ -345,7 +390,7 @@ Mentor
 Hero
 Comment ça? 
 
-[[Suivant]] 
+[[Suivant]]
 
 
 :: Je maîtrisais la situation. {"position":"475,175","size":"100,100"}
@@ -413,6 +458,16 @@ Comment ça?
         <</linkappend>>
 </span>
 <</nobr>>
+
+
+:: Ma tête n'a pas brûlé! {"position":"2550,175","size":"100,100"}
+Hero
+Ma tête n'a pas brûlé!
+
+Mentor
+ Débattable. Je crois que t'as une mèche un peu cramé.
+
+(suivant)[[Suivant4]]
 
 
 :: Merci {"position":"475,325","size":"100,100"}
@@ -484,6 +539,38 @@ Comment ça?
 <</nobr>>
 
 
+:: Pas de problème, je le jetterais dans les flammes moi-même. {"position":"2800,175","size":"100,100"}
+Hero
+Pas de problème, je le jetterais dans les flammes moi-même.
+
+Pompier 2
+Et dire que je pensais avoir tisser une amitié à toutes épreuves!
+ 
+Hero
+La vie est dure.
+ 
+Pompier2
+Trahison!
+ 
+Hero
+Aucun regret.
+ 
+Pompier2
+Disgrâce!
+ 
+Hero
+Je regrette de t'avoir un jour adressé la parole.
+ 
+Pompier2
+L'esprit du mal est marqué sur sa mèche brûlée!
+
+Narration
+Vous vérifiez par réflexe si vous avez vraiment une mèche brûlée, ce qui cause le rire de MENTOR et POMPIER2.
+
+(Allez-y foutez vous de moi.)[[Suivant5]]
+(Rends-moi un service, fais comme ta calvitie et prends quelques pas de recule.)[[Suivant5]]
+
+
 :: Passage sans titre {"position":"50,225","size":"100,100"}
 <<nobr>>
 	''Narration'' 
@@ -542,6 +629,25 @@ Comment ça?
     <</linkappend>>
 </span>
 <</nobr>>
+
+
+:: Quand j'étais gosse je disais que mon père était pompier, {"position":"2300,325","size":"100,100"}
+Hero
+Quand j'étais gosse je disais que mon père était pompier,  ou super-héros. Je n'arrivais pas à retenir le nom de son job.
+
+Narration
+MENTOR rigole et vous tape sur l'épaule.
+
+Mentor
+Ah j'ai l'idée, quand on me demande ce que fait mon gamin, je suis incapable de donner le titre du poste, j'ai l'impression d'être un père indigne.
+
+Mentor
+Tu as fini par réussir à retenir? Juste que je puisse dire à mon gamin si il doit abandonner avec son vieux père ou si ça finira par rentrer.
+
+Héro
+Ingénieur supérieur en radio-protection. Vous pourrez dire à votre fils qu'il y a de l'espoir, ça finit par rentrer.
+
+(suivant)[[Suivant3]]
 
 
 :: Réprimander {"position":"750,250","size":"100,100"}
@@ -611,7 +717,7 @@ Comment ça?
 <<set $AvisPompier1 to 5>>
 
 
-:: Suivant {"position":"1775,275","size":"100,100"}
+:: Suivant {"position":"1775,250","size":"100,100"}
 Mentor
  Après la plupart des incidents on te demandera si tu as vu quelque chose.
  
@@ -628,13 +734,58 @@ Mentor
 [[Une mafia incendiaire est derrière le coup?]]
 
 
-
-:: Suivant2 {"position":"2050,275","size":"100,100"}
+:: Suivant2 {"position":"2025,250","size":"100,100"}
 Mentor
  Ce que je veux dire c'est fait attention petit.
  
 <!--si affection > à je sais pas combien// 
  J'aime bien les petits gars dans ton genre, tu me fais penser à mon fiston.
+ 
+(Vous avez un fils?)[[Vous avez un fils?]]
+(Il a mis la tête dans les flammes, lui aussi?)[[Il a mis la tête dans les flammes, lui aussi?]]
+
+
+:: Suivant3 {"position":"2425,250","size":"100,100"}
+//si affection pas assez haut// 
+ Mentor
+ Me donne pas de paperasse à faire et fais attention à toi.
+//
+
+Pompier 2(autre novice)
+ Hey! C'est tête brûlée!
+ 
+Narration
+ POMPIER2 a fait sa formation avec vous, et apparemment il a entendu à propos de votre intervention.
+
+(facepalm Comment est-ce que tu es déjà au courant?)[[facepalm Comment est-ce que tu es déjà au courant?]]
+(Ma tête n'a pas brûlé!)[[Ma tête n'a pas brûlé!]]
+
+
+:: Suivant4 {"position":"2675,250","size":"100,100"}
+Pompier 2
+ J'aurais trop voulu voir ta tête! Faut que je demande à qu'on m'assigne à ton équipe.
+
+Mentor
+ Je préviens, j'ai un quota limité de bleu à ne pas laisser brûler par intervention.
+ 
+Pompier 2
+ Et la limite est à combien? 
+ 
+Mentor
+ Elle est à 1, faudra choisir les jeunes.
+
+(Pas de problème, je le jetterais dans les flammes moi-même.)[[Pas de problème, je le jetterais dans les flammes moi-même.]]
+(Choix facile, sauve le. Je veux garder mon honneur sauf.)[[Choix facile, sauve le. Je veux garder mon honneur sauf.]]
+
+
+:: Suivant5 {"position":"2925,250","size":"100,100"}
+Team de dév
+Merci d'avoir suivi notre introduction de jeu pour le GameJam! Vous n'aurez probablement jamais la suite, biz!
+
+Crédits 
+Développeur - Lucas OLS
+Scénariste, illustratrice des fonds - Ombeline CHAUD
+ illustratrice des personnages - Lézina KHADISSOVA
 
 
 
@@ -645,6 +796,7 @@ Un moment? Combien de temps exactement?
 Mentor
 Quelques mois. On a quelques images, mais rien de concret. De mes derniers échanges avec l'inspecteur chargé de l'enquête, il suspecte que le pyromane agit seul.
 
+[[Suivant2]]
 
 
 :: Une mafia incendiaire est derrière le coup? {"position":"1900,325","size":"100,100"}
@@ -656,7 +808,28 @@ Mentor
  
 Hero
  ('Une mafia qui aime commencer des incendies? )'(+1 affection avec mentor)[[Suivant2]]
- ('Une organisation secrète maléfique.')(+2 affection avec mentor)[[Suivant2])
+ ('Une organisation secrète maléfique.')(+2 affection avec mentor)[[Suivant2]]
+
+
+:: Vous avez un fils? {"position":"2150,175","size":"100,100"}
+Hero
+Vous avez un fils?
+
+Mentor
+Un peu plus vieux que toi je dirais. Un bon petit gars.
+
+(Il est pompier aussi?)[[Il est pompier aussi?]]
+(Quand j'étais gosse je disais que mon père était pompier,)[[Quand j'étais gosse je disais que mon père était pompier,]]
+
+
+:: facepalm Comment est-ce que tu es déjà au courant? {"position":"2550,325","size":"100,100"}
+Hero
+facepalm Comment est-ce que tu es déjà au courant?
+
+Pompier 2
+ Les rumeurs circulent vite ici.
+
+(suivant)[[Suivant4]]
 
 
 :: zone code {"position":"100,625","size":"100,100"}
