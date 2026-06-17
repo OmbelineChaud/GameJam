@@ -1,0 +1,1154 @@
+:: StoryTitle
+GameJam
+
+
+:: StoryData
+{
+  "ifid": "5071A6DD-1D70-4C33-BFAF-AEA21D2E9E3F",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Passage sans titre",
+  "tag-colors": {
+    "startup": "orange"
+  },
+  "zoom": 1
+}
+
+
+:: "" {"position":"100,750","size":"100,100"}
+
+
+
+:: Another passage {"position":"275,625","size":"100,100"}
+<<set $AvisSergent to $AvisSergent + 1>>
+<<set $log.push("Another passage.")>>
+
+
+:: Bah... Y'a eu un feu quoi. {"position":"1000,375","size":"100,100"}
+<<nobr>>
+''Hero''
+<div id="story-output">Bah… Y’a eu un feu quoi. Je sais pas ce que je suis supposé vous dire. (instinct -1). </div>
+<<set $log.push("<strong>Bah… Y’a eu un feu quoi. Je sais pas ce que je suis supposé vous dire. (instinct -1)</strong>")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Bon alors commençons avec les questions.</strong><</append>>
+        	<<append "#story-output">><br><br>Bon alors commençons avec les questions<</append>>
+            <<set $log.push("C’est apprécié. ")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>[[Introduction interrogation]]</strong><</append>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: C'était ma première intervention {"position":"1250,175","size":"100,100"}
+<<set $log.push("<strong>C'était ma première intervention</strong>")>>
+<<nobr>>
+''Hero'' 
+<div id="story-output">C'était ma première intervention, je ne saurais pas vraiment ce qu'est la norme.</div>
+<<set $log.push("C'était ma première intervention, je ne saurais pas vraiment ce qu'est la norme.")>>
+<span class="ecran-cliquable">
+	 <<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>[[Fin Introduction Interrogation]]</strong><</append>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Caserne {"position":"1500,275","size":"100,100"}
+<<set $log.push("<strong>Caserne</strong>")>>
+ <<nobr>>
+"Narration"
+<div id="story-output">Mentor vous sert une tasse de thé, avec comme fond sonore les quelques éclats de voix venant du bureau du Lieutenant que le Sergent est allé voir.</div>
+<<set $log.push("Mentor vous sert une tasse de thé, avec comme fond sonore les quelques éclats de voix venant du bureau du Lieutenant que le Sergent est allé voir.")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        	<<append "#story-output">><br><br>Vous soupçonnez que la conversation est orienté sur vous, même si rien de ce que vous n'avez entendu l'a confirmé.<</append>>
+        	<<set $log.push("Vous soupçonnez que la conversation est orienté sur vous, même si rien de ce que vous n'avez entendu l'a confirmé.!")>>
+            	<<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        		<<append "#story-output">><br><br> Ne te mine pas le moral. Enfin fais le un peu au moins, ce que t'as fait était vraiment dangereux.<</append>>
+        		<<set $log.push(" Ne te mine pas le moral. Enfin fais le un peu au moins, ce que t'as fait était vraiment dangereux.")>>
+            		<<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        		<<append "#story-output">><br><br> Waouh, je me sens tellement mieux maintenant.<</append>>
+        		<<set $log.push(" Waouh, je me sens tellement mieux maintenant.")>>
+            		<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        			<<append "#story-output">><br><br> Le Sergent a l'air terrifiant, et il l'est.<</append>>
+        			<<set $log.push(" Le Sergent a l'air terrifiant, et il l'est.")>>
+                    	<<linkappend " ">>
+        				<<append "#story-output">><br><br><strong>Pompier1 sapeur</strong><</append>>
+        				<<append "#story-output">><br><br> Mais? Y'a un mais, pas vrai?<</append>>
+        				<<set $log.push(" Mais? Y'a un mais, pas vrai?")>>
+           					<<linkappend " ">>
+        					<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        					<<append "#story-output">><br><br> Hm? Non, fais attention à ton comportement ou le Sergent commencera une procédure disciplinaire à ton encontre, ça fait pas génial sur le CV pour un novice de se prendre une procédure.<</append>>
+        					<<set $log.push(" Hm? Non, fais attention à ton comportement ou le Sergent commencera une procédure disciplinaire à ton encontre, ça fait pas génial sur le CV pour un novice de se prendre une procédure.")>>
+            					<<linkappend " ">>
+        						<<append "#story-output">><br><br><strong>Pompier1 sapeur</strong><</append>>
+        						<<append "#story-output">><br><br> Est-ce que tu essayes de me rassurer ou de me faire peur?<</append>>
+        						<<set $log.push(" Est-ce que tu essayes de me rassurer ou de me faire peur?")>>
+            						<<linkappend " ">>
+        							<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        							<<append "#story-output">><br><br>J'ai pas encore décidé. Bois ton thé.<</append>>
+        							<<set $log.push("J'ai pas encore décidé. Bois ton thé.")>>
+                                    	<<if $RepPolicier == 0>>
+                                        	<<linkappend " ">>
+        									<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        									<<append "#story-output">><br><br> On m'a dit que tu avais trouvé le feu bizarre. Tu veux élaborer? <</append>>
+        									<<set $log.push(" On m'a dit que tu avais trouvé le feu bizarre. Tu veux élaborer? ")>>
+                                                <<linkappend " ">>
+        											<<append "#story-output">><br><br><strong> [[Il était bizarre, c'est tout.]]</strong><</append>>
+                                                    <<append "#story-output">><br><br><strong> [[Je le pensais pas, je sais même pas ce que ce policier voulait dire.]]</strong><</append>>
+        										<</linkappend>>
+        									<</linkappend>>
+                                        <<else>>
+                                        	<<linkappend " ">>
+        									<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        									<<append "#story-output">><br><br> Tu as dis quoi aux policiers qui sont venus t'interroger?<</append>>
+        									<<set $log.push(" Tu as dis quoi aux policiers qui sont venus t'interroger?")>>
+           										<<linkappend " ">>
+        										<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        										<<append "#story-output">><br><br> Sur l'incendie? Je leur ai dit que c'était ma première intervention, je ne suis pas sûr de ce qu'il voulait.<</append>>
+        										<<set $log.push(" Sur l'incendie? Je leur ai dit que c'était ma première intervention, je ne suis pas sûr de ce qu'il voulait.")>>
+                                                	<<linkappend " ">>
+        												<<append "#story-output">><br><br><strong> [[Suivant]]</strong><</append>>
+        											<</linkappend>>
+        										<</linkappend>>
+        									<</linkappend>>
+                                        <</if>>
+        							<</linkappend>>
+        						<</linkappend>>
+       						<</linkappend>>
+        				<</linkappend>>
+        			<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Choix facile, sauve le. Je veux garder mon honneur sauf. {"position":"2800,325","size":"100,100"}
+<<set $log.push("<strong>Choix facile, sauve le. Je veux garder mon honneur sauf.</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Choix facile, sauve le. Je veux garder mon honneur sauf.</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor </strong><</append>>
+        	<<append "#story-output">><br><br>Trop tard pour ça. C’était ta première impression.<</append>>
+        	<<set $log.push("Trop tard pour ça. C’était ta première impression.")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Pompier2</strong><</append>>
+        		<<append "#story-output">><br><br>Je savais qu'on était amis, j'avais pas réalisé à quel point.<</append>>
+        		<<set $log.push("Je savais qu'on était amis, j'avais pas réalisé à quel point.")>>
+            	<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        			<<append "#story-output">><br><br>POMPIER2 pose une main solemnelle sur votre épaule et prends un air dramatique.<</append>>
+        			<<set $log.push("POMPIER2 pose une main solemnelle sur votre épaule et prends un air dramatique.")>>
+           			<<linkappend " ">>
+        				<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        				<<append "#story-output">><br><br>Pitié<</append>>
+        				<<set $log.push("Pitié")>>
+            			<<linkappend " ">>
+        					<<append "#story-output">><br><br><strong>Pompier2</strong><</append>>
+        					<<append "#story-output">><br><br>Moi aussi je risquerais ma vie pour toi.<</append>>
+        					<<set $log.push("Moi aussi je risquerais ma vie pour toi.")>>
+            				<<linkappend " ">>
+        						<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        						<<append "#story-output">><br><br>POMPIER2 prétends essuyer une larme au coin de l'oeil avant de craquer de commencer à rire<</append>>
+        						<<set $log.push("POMPIER2 prétends essuyer une larme au coin de l'oeil avant de craquer de commencer à rire")>>
+                                <<linkappend " ">>
+									<<append "#story-output">><br><br><strong> [[Suivant ->Suivant5]]</strong><</append>>
+								<</linkappend>>
+        					<</linkappend>>
+        				<</linkappend>>
+        			<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Comme quoi? {"position":"600,50","size":"100,100"}
+<<nobr>>
+''Hero''
+<div id="story-output">Comme quoi?</div>
+<<set $log.push("<strong>Comme quoi?</strong>")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br>On est tous en binôme, parce qu’on a tous besoin que quelqu’un couvre nos arrières à un moment ou un autre. Ne laisse pas ton binôme derrière.<</append>>
+        	<<set $log.push("On est tous en binôme, parce qu’on a tous besoin que quelqu’un couvre nos arrières à un moment ou un autre. Ne laisse pas ton binôme derrière.")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>[[Réprimander]]</strong><</append>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Expert semble un peu exagérer. {"position":"1000,125","size":"100,100"}
+<<nobr>>
+''Hero''
+<div id="story-output">Expert semble un peu exagérer</div>
+<<set $log.push("<strong>Expert semble un peu exagérer </strong>")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Policier 1</strong><</append>>
+        	<<append "#story-output">><br><br>Alors on va dire “plus informé” jusqu’à ce que je puisse dire expert alors... <</append>>
+            <<set $log.push("Alors on va dire “plus informé” jusqu’à ce que je puisse dire expert alors... ")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>[[Introduction interrogation]]</strong><</append>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Faire ses preuves {"position":"225,325","size":"100,100"}
+<<set $AvisSergent to $AvisSergent - 1>>
+<<set $log.push("<strong>Faire ses preuves</strong>")>>
+<strong>[[Introduction Mentor]]</strong>
+
+
+:: Fin Introduction Interrogation {"position":"1375,250","size":"100,100"}
+<<set $log.push("<strong>Fin Intriduction Interrogation</strong>")>>
+<<nobr>>
+''Narration''
+<div id="story-output">Agent POLICIER1 prend des notes sur sa tablette.</div>
+<<set $log.push("Agent POLICIER1 prend des notes sur sa tablette.")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Policier 1</strong><</append>>
+        	<<append "#story-output">><br><br>Je vois, quelque chose à ajouter? Plus de détails peut-être?<</append>>
+        	<<set $log.push("Je vois, quelque chose à ajouter? Plus de détails peut-être?")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        		<<append "#story-output">><br><br>Non, je ne crois pas.<</append>>
+        		<<set $log.push("Non, je ne crois pas.")>>
+            	<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Policier 1 </strong><</append>>
+        			<<append "#story-output">><br><br>Je vais faire le tour du reste de votre équipe alors. Si jamais quelque chose vous revient, n’hésitez pas à me contacter. <</append>>
+        			<<set $log.push("Je vais faire le tour du reste de votre équipe alors. Si jamais quelque chose vous revient, n’hésitez pas à me contacter. ")>>
+            		<<linkappend " ">>
+        				<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        				<<append "#story-output">><br><br>Agent POLICIER1 vous donne son numéro professionnel.<</append>>
+        				<<set $log.push("Agent POLICIER1 vous donne son numéro professionnel.")>>
+            			<<linkappend " ">>
+        					<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        					<<append "#story-output">><br><br>Après avoir fait votre déclaration à la police, vous rentrez à la caserne avec votre équipe. Le Sergent vous ayant déjà fait une leçon de morale, le reste de l'équipe vous laisse tranquille.<</append>>
+        					<<set $log.push("Après avoir fait votre déclaration à la police, vous rentrez à la caserne avec votre équipe. Le Sergent vous ayant déjà fait une leçon de morale, le reste de l'équipe vous laisse tranquille.")>>
+            				<<linkappend " ">>
+        						<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        						<<append "#story-output">><br><br>Vous êtes épuisé.<</append>>
+        						<<set $log.push("Vous êtes épuisé.")>>
+                                	<<linkappend " ">>
+        								<<append "#story-output">><br><br><strong>[[Caserne]]</strong><</append>>
+        						<</linkappend>>
+        					<</linkappend>>
+        				<</linkappend>>
+        			<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+
+:: Fin d'intervention {"position":"875,250","size":"100,100"}
+<<set $log.push("<strong>Fin d'intervention</strong>")>>
+<<nobr>>
+''Narration''
+<div id="story-output">Le reste de l’équipe continue à s’occuper du feu, vous essayez d’aider en leur passant l’équipement, sous le regard lourd de reproches du Sergeant.</div>
+<<set $log.push("Le reste de l’équipe continue à s’occuper du feu, vous essayez d’aider en leur passant l’équipement, sous le regard lourd de reproches du Sergeant.")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Narration </strong><</append>>
+        	<<append "#story-output">><br><br>La police arrive sur les lieux une fois le feu éteint. Les policiers attendent patiemment que l’équipe finisse pour aller leur parler et s’assurent que la zone est sécurisée en attendant.<</append>>
+        	<<set $log.push("La police arrive sur les lieux une fois le feu éteint. Les policiers attendent patiemment que l’équipe finisse pour aller leur parler et s’assurent que la zone est sécurisée en attendant.")>>
+             <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        		<<append "#story-output">><br><br>Un des policiers s’approche de vous, sûrement parce que je ne suis pas occupé comme les autres.<</append>>
+        		<<set $log.push("Un des policiers s’approche de vous, sûrement parce que je ne suis pas occupé comme les autres.")>>
+            	<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Pompier1 sapeur</strong><</append>>
+        			<<append "#story-output">><br><br>Agent POLICIER1, Je ne crois pas vous avoir déjà vu. Est-ce que je pourrais avoir votre nom?<</append>>
+        			<<set $log.push("Agent POLICIER1, Je ne crois pas vous avoir déjà vu. Est-ce que je pourrais avoir votre nom?")>>
+            		<<linkappend " ">>
+        				<<append "#story-output">><br><br><strong>Policier 1</strong><</append>>
+        				<<append "#story-output">><br><br>Le petit nouveau!<</append>>
+        				<<set $log.push("Le petit nouveau!")>>
+            			<<linkappend " ">>
+        					<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        					<<append "#story-output">><br><br>HERO_NOM_COMPLET. Je viens de finir ma formation et d’être affecté à cette équipe.<</append>>
+        					<<set $log.push("HERO_NOM_COMPLET. Je viens de finir ma formation et d’être affecté à cette équipe.")>>
+            				<<linkappend " ">>
+        						<<append "#story-output">><br><br><strong>Policier 1</strong><</append>>
+        						<<append "#story-output">><br><br>Je vois. Ravie de vous rencontrer, on se croisera de temps en temps après les incendies. C’est la procédure de vous poser des questions sur vos impressions des incendies, vous êtes les experts après tout.<</append>>
+        						<<set $log.push("Je vois. Ravie de vous rencontrer, on se croisera de temps en temps après les incendies. C’est la procédure de vous poser des questions sur vos impressions des incendies, vous êtes les experts après tout.")>>
+            					<<linkappend " ">>
+        							<<append "#story-output">><br><br><strong>Choix</strong><</append>>
+                                    <<append "#story-output">><br><br><strong>[[Expert semble un peu exagérer.]]</strong><</append>>
+                                    <<append "#story-output">><br><br><strong>[[Je ferais de mon mieux pour aider.]]</strong><</append>>
+                                    <<append "#story-output">><br><br><strong>[[Bah... Y'a eu un feu quoi.]]</strong><</append>>
+                            	<</linkappend>>
+        					<</linkappend>>
+        				<</linkappend>>
+        			<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Il a mis la tête dans les flammes, lui aussi? {"position":"2150,325","size":"100,100"}
+<<set $log.push("<strong>Il a mis la tête dans les flammes, lui aussi?</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Il a mis la tête dans les flammes, lui aussi?</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br> Ah non, ça ne risque pas. Mon gamin sait que le feu est dangereux depuis qu'il est haut comme 3 pommes.<</append>>
+        	<<set $log.push(" Ah non, ça ne risque pas. Mon gamin sait que le feu est dangereux depuis qu'il est haut comme 3 pommes.")>>
+            <<linkappend " ">>
+				<<append "#story-output">><br><br><strong>[[Il est pompier aussi?]]</strong><</append>>
+                <<append "#story-output">><br><br><strong>[[Quand j'étais gosse je disais que mon père était pompier,]]</strong><</append>>
+			<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Il est pompier aussi? {"position":"2300,175","size":"100,100"}
+<<set $log.push("<strong>Il est pompier aussi?</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Il est pompier aussi?</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br>Non, mon grand aime bien bidouiller, il est ingénieur en quelque chose de trop compliqué pour un vieil homme comme moi.<</append>>
+        	<<set $log.push("Non, mon grand aime bien bidouiller, il est ingénieur en quelque chose de trop compliqué pour un vieil homme comme moi.")>>
+            <<linkappend " ">>
+				<<append "#story-output">><br><br><strong>[[Suivant ->Suivant3]]</strong><</append>>
+			<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Il était bizarre, c'est tout. {"position":"1625,175","size":"100,100"}
+ <<set $log.push("<strong>Il était bizarre, c'est tout.</strong>")>>
+ <nobr>>
+"Hero"
+<div id="story-output">Il était bizarre, c'est tout.</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br> Je vois, de mauvaise foi, hein?<</append>>
+        	<<set $log.push(" Je vois, de mauvaise foi, hein?")>>
+            <<linkappend " ">>
+				<<append "#story-output">><br><br><strong> [[Suivant]]</strong><</append>>
+			<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Introduction Mentor {"position":"350,250","size":"100,100"}
+<<set $log.push("<strong>Introduction Mentor</strong>")>>
+<<nobr>>
+	''Narration'' 
+	<div id="story-output">Vous courrez vers la porte principale et essayez de l’ouvrir. La porte résiste malgré tout. </div>
+	<<set $log.push("Vous courrez vers la porte principale et essayez de l’ouvrir. La porte résiste malgré tout.")>>
+	<span class="ecran-cliquable">
+        	<<linkappend " ">>
+            	<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+            	<<append "#story-output">><br><br>Vous devez y mettre plus de force. Vous donnez un coup d’épaule dedans. Les gonds de la porte cédent et votre élan vous entraîne dans la chute de la porte.<</append>>
+            	<<set $log.push("Vous devez y mettre plus de force. Vous donnez un coup d’épaule dedans. Les gonds de la porte cédent et votre élan vous entraîne dans la chute de la porte.")>>
+            	<<linkappend " ">>
+            		<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+                	<<append "#story-output">><br><br>L’appel d’air créé propage le feu qui embrase la porte d’un seul coup. Vous fermez les yeux face à la chaleur et à la brûlure imminente.<</append>>
+                	<<set $log.push("L’appel d’air créé propage le feu qui embrase la porte d’un seul coup. Vous fermez les yeux face à la chaleur et à la brûlure imminente.")>>
+                	<<linkappend " ">>
+            			<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+                		<<append "#story-output">><br>Votre souffle se fait couper par votre ceinture alors que vous êtes soulevé. Vous ouvrez les yeux, les alentours sont bien plus sombres et l’air autour de vous est beaucoup plus frais, vous vous sentez un peu confus.<br><</append>>
+                    	<<set $log.push("Votre souffle se fait couper par votre ceinture alors que vous êtes soulevé. Vous ouvrez les yeux, les alentours sont bien plus sombres et l’air autour de vous est beaucoup plus frais, vous vous sentez un peu confus.")>>
+                    		<<linkappend " ">>
+            					<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+               			 		<<append "#story-output">><br>Bwahahaha, c’est gentil d’offrir un barbecue pour ta première intervention petit, mais je suis végétarien!<br><</append>>
+                         	<<set $log.push("Bwahahaha, c’est gentil d’offrir un barbecue pour ta première intervention petit, mais je suis végétarien!")>>
+                         	<<linkappend " ">>
+                         		<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+            					<<append "#story-output">><br><br>La visière de votre casque est alors descendue par une grande main juste avant que vous ne soyez lâché, vous vous écrasez sans aucune grâce dans l’herbe.<</append>>
+                				<<set $log.push("La visière de votre casque est alors descendue par une grande main juste avant que vous ne soyez lâché, vous vous écrasez sans aucune grâce dans l’herbe.")>>
+                            	<<linkappend " ">>
+                         			<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+            						<<append "#story-output">><br><br>Vous relèvez la tête pour voir votre sauveur.<</append>>
+                					<<set $log.push("Vous relèvez la tête pour voir votre sauveur.")>>
+                       		 		<<linkappend " ">>
+                         				<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+            							<<append "#story-output">><br><br>Rien de cassé petit?<</append>>
+                						<<set $log.push("Rien de cassé petit?")>>
+                                        <<linkappend " ">>
+                         					<<append "#story-output">><br><br><strong>Choix</strong><</append>>
+            								<<append "#story-output">><br><br><strong>[[Je maîtrisais la situation.]]</strong><</append>>
+                							<<append "#story-output">><br><br><strong>[[Merci]]</strong><</append>>
+                            	<</linkappend>>
+        					<</linkappend>>
+        				<</linkappend>>
+        			<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+    <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Introduction interrogation {"position":"1125,250","size":"100,100"}
+<<set $log.push("<strong>Introduction interrogation</strong>")>>
+<<nobr>>
+''Policier 1''
+<div id="story-output">Est-ce que vous avez vu quelque chose durant le feu? Une personne ou un objet qui pourrait être la source?</div>
+<<set $log.push("Est-ce que vous avez vu quelque chose durant le feu? Une personne ou un objet qui pourrait être la source?")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        	<<append "#story-output">><br><br>Pas vraiment non.<</append>>
+        	<<set $log.push("Pas vraiment non.")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Policier 1</strong><</append>>
+        		<<append "#story-output">><br><br>Est-ce que le feu vous a semblé étrange?<</append>>
+        		<<set $log.push("Est-ce que le feu vous a semblé étrange?")>>
+           		<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Choix</strong><</append>>
+        			<<append "#story-output">><br><br><strong>[[Oui]]</strong><</append>>
+                    <<append "#story-output">><br><br><strong>[[C'était ma première intervention]]</strong><</append>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Je ferais de mon mieux pour aider. {"position":"1000,250","size":"100,100"}
+<<nobr>>
+''Hero''
+<div id="story-output">Je ferai de mon mieux pour aider. </div>
+<<set $log.push("<strong>Je ferai de mon mieux pour aider. </strong>")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Policier 1</strong><</append>>
+        	<<append "#story-output">><br><br>C’est apprécié. <</append>>
+            <<set $log.push("C’est apprécié. ")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>[[Introduction interrogation]]</strong><</append>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Je le pensais pas, je sais même pas ce que ce policier voulait dire. {"position":"1625,325","size":"100,100"}
+<<set $log.push("<strong>Je le pensais pas, je sais même pas ce que ce policier voulait dire.</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Je le pensais pas, je sais même pas ce que ce policier voulait dire.</div>
+<span class="ecran-cliquable">
+ <<linkappend " ">>
+ 	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+    <<append "#story-output">><br><br> Et moi qui pensais que le petit nouveau avait de l'instinct.<</append>>
+    <<set $log.push(" Et moi qui pensais que le petit nouveau avait de l'instinct.")>>
+    <<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        	<<append "#story-output">><br><br>Comment ça? <</append>>
+        	<<set $log.push("Comment ça? ")>>
+            <<linkappend " ">>
+				<<append "#story-output">><br><br><strong> [[Suivant]]</strong><</append>>
+				<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+
+:: Je maîtrisais la situation. {"position":"475,175","size":"100,100"}
+<!--+1 débilité-->
+<<nobr>>
+''Héro''
+<div id="story-output">Je maîtrisais la situation.</div>
+<<set $log.push("<strong>Je maîtrisais la situation.</strong>")>>
+<span class="ecran-cliquable">
+    <<linkappend " ">>
+    	<<append "#story-output">><br><br><strong>Pompier1 sapeur</strong><</append>>
+        <<append "#story-output">><br><br>Et quelle situation est-ce que tu maîtrisais exactement? Celle avant que tu touches à la porte ou celle où tu as embrasé les flammes qu’on essayait de contenir?<</append>>
+        <<set $log.push("Et quelle situation est-ce que tu maîtrisais exactement? Celle avant que tu touches à la porte ou celle où tu as embrasé les flammes qu’on essayait de contenir?")>>
+        <<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+            <<append "#story-output">><br>Vouloir aider, c’est une bonne chose, mais n’en fais pas une question de fierté. Tout le monde fait des erreurs, le tout c’est d’en tirer une leçon.<br><</append>>
+        	<<set $log.push("Vouloir aider, c’est une bonne chose, mais n’en fais pas une question de fierté. Tout le monde fait des erreurs, le tout c’est d’en tirer une leçon.")>>
+            <<linkappend " ">>
+            	<<append "#story-output">><br><br><strong>Choix</strong><</append>>
+            	<<append "#story-output">><br><br><strong>[[Comme quoi?]]</strong><</append>>
+                <<append "#story-output">><br><br><strong>[[J’ai saisi, ne pas désobéir au Sergent.]]</strong><</append>>
+         	<</linkappend>>
+        <</linkappend>>
+    <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Je pense que je suivrais les ordres la prochaine fois. {"position":"600,325","size":"100,100"}
+<<nobr>>
+''Hero''
+<div id="story-output">Je pense que je suivrais les ordres la prochaine fois.</div>
+<<set $log.push("<strong>Je pense que je suivrais les ordres la prochaine fois.</strong>")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        <<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        <<append "#story-output">><br><br>C’est  aussi une option.<</append>>
+        <<set $log.push("C’est  aussi une option.")>>
+        <<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>[[Réprimander]]</strong><</append>>
+        <</linkappend>>
+ 	<</linkappend>>
+</span>
+<</nobr>>
+
+
+:: J’ai saisi, ne pas désobéir au Sergent. {"position":"600,175","size":"100,100"}
+<<nobr>>
+''Hero''
+<div id="story-output">J'ai saisi, ne pas désobéir au Sergent.</div>
+<<set $log.push("<strong>J'ai saisi, ne pas désobéir au Sergent.</strong>")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br>Je pensais plutôt à ne pas essayer de manger les flammes, mais c’est pas mal non plus.<</append>>
+        	<<set $log.push("Je pensais plutôt à ne pas essayer de manger les flammes, mais c’est pas mal non plus.")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong></strong>Mentor<</append>>
+        		<<append "#story-output">><br><br><strong></strong>Aussi, on est un binôme toi et moi, la prochaine fois que tu auras envie de faire un truc stupide, donne moi une chance de t’accompagner.<</append>>
+        		<<set $log.push("Aussi, on est un binôme toi et moi, la prochaine fois que tu auras envie de faire un truc stupide, donne moi une chance de t’accompagner.")>>
+                <<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>[[Réprimander]]</strong><</append>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Ma tête n'a pas brûlé! {"position":"2550,175","size":"100,100"}
+<<set $log.push("<strong>Ma tête n'a pas brûlé!</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Ma tête n'a pas brûlé!</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br> Débattable. Je crois que t'as une mèche un peu cramé.<</append>>
+        	<<set $log.push(" Débattable. Je crois que t'as une mèche un peu cramé.")>>
+            <<linkappend " ">>
+				<<append "#story-output">><br><br><strong> [[Suivant ->Suivant4]]</strong><</append>>
+			<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Merci {"position":"475,325","size":"100,100"}
+<<set $log.push("<strong>merci</strong>")>>
+<<nobr>>
+''Hero''
+<div id="story-output">Merci, je ne pensais pas que la porte allait céder.</div>
+<<set $log.push("Merci, je ne pensais pas que la porte allait céder.")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br>Je suis proche de la retraite, pas question qu’un petit gars la prenne avant moi. Et puis ça m’aurait fait de la paperasse à remplir.<</append>>
+        	<<set $log.push("Je suis proche de la retraite, pas question qu’un petit gars la prenne avant moi. Et puis ça m’aurait fait de la paperasse à remplir.")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Héros</strong><</append>>
+        		<<append "#story-output">><br><br>Rassurant.<</append>>
+        		<<set $log.push("Rassurant.")>>
+            	<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Pompier1 sapeur</strong><</append>>
+        			<<append "#story-output">><br><br>Le petit nouveau!<</append>>
+        			<<set $log.push("Le petit nouveau!")>>
+            		<<linkappend " ">>
+        				<<append "#story-output">><br><br><strong>Choix</strong><</append>>
+        				<<append "#story-output">><br><br><strong>[[Ok. (fist bump)]]</strong><</append>>
+                        <<append "#story-output">><br><br><strong>[[Je pense que je suivrais les ordres la prochaine fois.]]</strong><</append>>
+        			<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Ok. (fist bump) {"position":"600,450","size":"100,100"}
+<<set $log.push("<strong>Ok.(fist bump)<strong>")>>
+<<nobr>>
+''Hero''
+<div id="story-output">Ok.</div>
+<<set $log.push("Ok.")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        	<<append "#story-output">><br><br>Vous offrez un poing pour un check. <</append>>
+        	<<set $log.push("Vous offrez un poing pour un check. ")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        		<<append "#story-output">><br><br>Votre mentor accepte. <</append>>
+        		<<set $log.push("Votre mentor accepte. ")>>
+            	<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>[[Réprimander]]</strong><</append>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Oui {"position":"1250,325","size":"100,100"}
+<<set $RepPolicier to $RepPolicier - 1>>
+<<set $log.push("<strong>Oui</strong>")>>
+<<nobr>>
+''Hero''
+<div id="story-output">Oui, c'était définitivement plus intense que ça n'aurait dû être.</div>
+<<set $log.push("Oui, c'était définitivement plus intense que ça n'aurait dû être.")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>[[Fin Introduction Interrogation]]</strong><</append>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Pas de problème, je le jetterais dans les flammes moi-même. {"position":"2800,175","size":"100,100"}
+<<set $log.push("<strong>Pas de problème, je le jetterais dans les flammes moi-même.</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Pas de problème, je le jetterais dans les flammes moi-même.</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Pompier 2</strong><</append>>
+        	<<append "#story-output">><br><br>Et dire que je pensais avoir tisser une amitié à toutes épreuves!<</append>>
+        	<<set $log.push("Et dire que je pensais avoir tisser une amitié à toutes épreuves!")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        		<<append "#story-output">><br><br>La vie est dure.<</append>>
+        		<<set $log.push("La vie est dure.")>>
+            	<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Pompier 2</strong><</append>>
+        			<<append "#story-output">><br><br>Trahison!<</append>>
+        			<<set $log.push("Trahison!")>>
+            		<<linkappend " ">>
+        				<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        				<<append "#story-output">><br><br>Aucun regret.<</append>>
+        				<<set $log.push("Aucun regret.")>>
+            			<<linkappend " ">>
+        					<<append "#story-output">><br><br><strong>Pompier 2</strong><</append>>
+        					<<append "#story-output">><br><br>Disgrâce!<</append>>
+        					<<set $log.push("Disgrâce!")>>
+            				<<linkappend " ">>
+        						<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        						<<append "#story-output">><br><br>Je regrette de t'avoir un jour adressé la parole.<</append>>
+        						<<set $log.push("Je regrette de t'avoir un jour adressé la parole.")>>
+            					<<linkappend " ">>
+        							<<append "#story-output">><br><br><strong>Pompier 2</strong><</append>>
+        							<<append "#story-output">><br><br>L'esprit du mal est marqué sur sa mèche brûlée!<</append>>
+        							<<set $log.push("L'esprit du mal est marqué sur sa mèche brûlée!")>>
+            						<<linkappend " ">>
+        								<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        								<<append "#story-output">><br><br>Vous vérifiez par réflexe si vous avez vraiment une mèche brûlée, ce qui cause le rire de MENTOR et POMPIER2.<</append>>
+        								<<set $log.push("Vous vérifiez par réflexe si vous avez vraiment une mèche brûlée, ce qui cause le rire de MENTOR et POMPIER2.")>>
+            							<<linkappend " ">>
+											<<append "#story-output">><br><br><strong>[[Allez-y foutez vous de moi. ->Suivant5]]</strong><</append>>
+    										<<append "#story-output">><br><br><strong>[[Rends-moi un service, fais comme ta calvitie et prends quelques pas de recule. ->Suivant5]]</strong><</append>>
+										<</linkappend>>
+        							<</linkappend>>
+        						<</linkappend>>
+        					<</linkappend>>
+        				<</linkappend>>
+        			<</linkappend>>
+       			<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Passage sans titre {"position":"50,225","size":"100,100"}
+<<nobr>>
+	''Narration'' 
+	<div id="story-output">Aix-en-Provence, 5 Mai 2076. Paroisse Cathédrale Saint Sauveur. Incendie en cours.</div>
+	<<set $log.push("Aix-en-Provence, 5 Mai 2076. Paroisse Cathédrale Saint Sauveur. Incendie en cours.")>>
+	<span class="ecran-cliquable">
+    	<<linkappend " ">>
+         	<<append "#story-output">><br><br><strong>Sergent 1</strong><</append>>
+        	<<append "#story-output">><br><br>Le petit nouveau!<</append>>
+        	<<set $log.push("Le petit nouveau!")>>
+        	<<linkappend " ">>
+            	<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+            <<append "#story-output">><br><br>La douce voix du Sergent(ironie) vous interpelle alors que vous connectez le tuyau à la borne incendie. Le Sergent semble déterminé à ne pas apprendre votre nom alors que vous avez été assigné à son équipe il y a déjà 3 jours.<</append>>
+            <<set $log.push("La douce voix du Sergent(ironie) vous interpelle alors que vous connectez le tuyau à la borne incendie. Le Sergent semble déterminé à ne pas apprendre votre nom alors que vous avez été assigné à son équipe il y a déjà 3 jours.")>>
+            <<linkappend " ">>
+            	<<append "#story-output">><br><br><strong>Sergent 1</strong><</append>>
+                <<append "#story-output">><br><br>Du nerf, le feu ne va pas s’éteindre tout seul! Cathy, Sam, on a une victime à l’intérieur côté Ouest!<</append>>
+                <<set $log.push("Du nerf, le feu ne va pas s’éteindre tout seul! Cathy, Sam, on a une victime à l’intérieur côté Ouest!")>>
+                <<linkappend " ">>
+            		<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+                	<<append "#story-output">><br>Vous êtes pourtant juste à côté de l’entrée, pourquoi le Sergeant ne vous envoie pas à l’intérieur? Vous êtes devenu pompier pour sauver des vies, pas pour vous faire appeler le petit nouveau par une vieille branche.<br><</append>>
+                    <<set $log.push("Vous êtes pourtant juste à côté de l’entrée, pourquoi le Sergeant ne vous envoie pas à l’intérieur? Vous êtes devenu pompier pour sauver des vies, pas pour vous faire appeler le petit nouveau par une vieille branche.")>>
+                    <<linkappend " ">>
+            			<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+               			 <<append "#story-output">><br>Quelqu’un a besoin d’aide.<br><</append>>
+                         <<set $log.push("Quelqu’un a besoin d’aide.")>>
+                         <<linkappend " ">>
+                         	<<append "#story-output">><br><br><strong>Choix</strong><</append>>
+            				<<append "#story-output">><br><br><strong>[[Prévenir le sergent]]</strong><</append>>
+                			<<append "#story-output">><br><br><strong>[[Faire ses preuves]]</strong><</append>>
+        				<</linkappend>>
+        			<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+    <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Prévenir le sergent {"position":"225,175","size":"100,100"}
+<<set $AvisSergent to $AvisSergent + 1>>
+<<set $log.push("<strong>Prévenir le sergent</strong>")>>
+<<nobr>>
+''Héro''
+<div id="story-output">Sergent je suis plus proche, je m’en occupe!</div>
+<<set $log.push("Sergent je suis plus proche, je m’en occupe!")>>
+<span class="ecran-cliquable">
+    <<linkappend " ">>
+    	<<append "#story-output">><br><br><strong>Sergent 1</strong><</append>>
+        <<append "#story-output">><br><br>Hey petit! Je ne t’ai pas dit d’y aller!<</append>>
+        <<set $log.push("Hey petit! Je ne t’ai pas dit d’y aller!")>>
+            <<linkappend " ">>
+            	<<append "#story-output">><br><br><strong>[[Introduction Mentor]]</strong><</append>>
+        <</linkappend>>
+    <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Quand j'étais gosse je disais que mon père était pompier, {"position":"2300,325","size":"100,100"}
+<<set $log.push("<strong>Quand j'étais gosse je disais que mon père était pompier</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Quand j'étais gosse je disais que mon père était pompier,  ou super-héros. Je n'arrivais pas à retenir le nom de son job.</div>
+<<set $log.push("Quand j'étais gosse je disais que mon père était pompier,  ou super-héros. Je n'arrivais pas à retenir le nom de son job.")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        	<<append "#story-output">><br><br>MENTOR rigole et vous tape sur l'épaule.<</append>>
+        	<<set $log.push("MENTOR rigole et vous tape sur l'épaule.")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        		<<append "#story-output">><br><br>Ah j'ai l'idée, quand on me demande ce que fait mon gamin, je suis incapable de donner le titre du poste, j'ai l'impression d'être un père indigne.<</append>>
+        		<<set $log.push("Ah j'ai l'idée, quand on me demande ce que fait mon gamin, je suis incapable de donner le titre du poste, j'ai l'impression d'être un père indigne.")>>
+            	<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        			<<append "#story-output">><br><br>Tu as fini par réussir à retenir? Juste que je puisse dire à mon gamin si il doit abandonner avec son vieux père ou si ça finira par rentrer.<</append>>
+        			<<set $log.push("Tu as fini par réussir à retenir? Juste que je puisse dire à mon gamin si il doit abandonner avec son vieux père ou si ça finira par rentrer.")>>
+           			<<linkappend " ">>
+        				<<append "#story-output">><br><br><strong>Héro</strong><</append>>
+        				<<append "#story-output">><br><br>Ingénieur supérieur en radio-protection. Vous pourrez dire à votre fils qu'il y a de l'espoir, ça finit par rentrer.<</append>>
+        				<<set $log.push("Ingénieur supérieur en radio-protection. Vous pourrez dire à votre fils qu'il y a de l'espoir, ça finit par rentrer.")>>
+                        <<linkappend " ">>
+							<<append "#story-output">><br><br><strong>[[Suivant ->Suivant3]]</strong><</append>>
+						<</linkappend>>
+        			<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Réprimander {"position":"750,250","size":"100,100"}
+<<set $log.push("<strong>Réprimander</strong>")>>
+<<nobr>>
+''Sergent 1''
+<div id="story-output">A quoi est-ce que tu pensais exactement?! Tu testes la réaction du service administratif sur le licenciement?</div>
+<<set $log.push("A quoi est-ce que tu pensais exactement?! Tu testes la réaction du service administratif sur le licenciement?")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Pompier 3</strong><</append>>
+        	<<append "#story-output">><br><br>Ça prend environ 6 mois. (voix lointaine)<</append>>
+        	<<set $log.push("Ça prend environ 6 mois. (voix lointaine)")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Sergent 1</strong><</append>>
+        		<<append "#story-output">><br><br>Tu es toujours en période probatoire. On est pas ici pour jouer, si tu n’as pas l’intention de suivre les ordres, je te conseille fortement de reconsidérer ton choix de carrière. Des vies dépendent de notre capacité à travailler en équipe, autant celles des civils que de tes collègues.<</append>>
+        		<<set $log.push("Tu es toujours en période probatoire. On est pas ici pour jouer, si tu n’as pas l’intention de suivre les ordres, je te conseille fortement de reconsidérer ton choix de carrière. Des vies dépendent de notre capacité à travailler en équipe, autant celles des civils que de tes collègues.")>>
+            	<<linkappend " ">>
+                	<<if $AvisSergent < 0>>
+        			<<append "#story-output">><br><br><strong>Sergent 1 </strong><</append>>
+        			<<append "#story-output">><br><br>Te lancer tout seul sans prévenir personne, c'est le meilleur moyen que tu deviennes une victime supplémentaire à sauver. Tu as de la chance que MENTOR t’ai vu.<</append>>
+        			<<set $log.push("Te lancer tout seul sans prévenir personne, c'est le meilleur moyen que tu deviennes une victime supplémentaire à sauver. Tu as de la chance que MENTOR t’ai vu.")>>
+                    <</if>>
+            		<<linkappend " ">>
+        				<<append "#story-output">><br><br><strong>Sergent 1</strong><</append>>
+        				<<append "#story-output">><br><br>Nos ressources sont déjà limitées, je ne veux pas les utiliser pour poursuivre ma propre équipe. <</append>>
+        				<<set $log.push("Nos ressources sont déjà limitées, je ne veux pas les utiliser pour poursuivre ma propre équipe. ")>>
+            			<<linkappend " ">>
+        					<<append "#story-output">><br><br><strong>Sergent 1</strong><</append>>
+        					<<append "#story-output">><br><br>Va vérifier le matériel du camion.<</append>>
+        					<<set $log.push("Va vérifier le matériel du camion.")>>
+            				<<linkappend " ">>
+        						<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        						<<append "#story-output">><br><br>La vérification du matériel est toujours faite avant les opérations, il n’y a pas de nécessité de vérifier à nouveau durant une opération. Vous comprennez rapidement que vous venez de vous faire mettre au coin comme un gamin.<</append>>
+        						<<set $log.push("Le petit nouveau!")>>
+            					<<linkappend " ">>
+        							<<append "#story-output">><br><br><strong>[[Fin d'intervention]]</strong><</append>>
+        						<</linkappend>>
+        					<</linkappend>>
+        				<</linkappend>>
+        			<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: StoryCaption {"position":"175,25","size":"100,100"}
+<img src="https://static.vecteezy.com/system/resources/thumbnails/026/136/046/small/business-man-illustration-ai-generative-png.png" style="width: 100%; border: 2px solid white;">
+
+<<button "Voir l'historique">>
+    <<script>>
+        Dialog.setup("Historique des dialogues");
+        Dialog.wiki(State.variables.log.join("<br><br>"));
+        Dialog.open();
+    <</script>>
+<</button>>
+
+
+:: StoryInit {"position":"325,25","size":"100,100"}
+<<set $log to []>>
+<<set $courage to 0>>
+<<set $AvisSergent to 0>>
+<<set $AvisMentor to 0>>
+<<set $AvisVillain to 0>>
+<<set $AvisPompier1 to 5>>
+<<set $RepPolicier to 0>>
+<<set $AffectMentor to 0>>
+
+
+:: Suivant {"position":"1775,250","size":"100,100"}
+<<set $log.push("<strong>Suivant</strong>")>>
+<<nobr>>
+"Mentor"
+<div id="story-output"> Après la plupart des incidents on te demandera si tu as vu quelque chose.</div>
+<<set $log.push(" Après la plupart des incidents on te demandera si tu as vu quelque chose.")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br> Si tu vois quelque chose c'est important de les tenir informer, on travaille avec eux pour déterminer lorsqu'il s'agit d'incendies criminels et monter un dossier. <</append>>
+        	<<set $log.push(" Si tu vois quelque chose c'est important de les tenir informer, on travaille avec eux pour déterminer lorsqu'il s'agit d'incendies criminels et monter un dossier. ")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Hero</strong><</append>>
+        		<<append "#story-output">><br><br> Et ça arrive souvent? Que les incendies soient criminels je veux dire.<</append>>
+        		<<set $log.push(" Et ça arrive souvent? Que les incendies soient criminels je veux dire.")>>
+            	<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        			<<append "#story-output">><br><br> Habituellement non, mais de plus en plus ces derniers temps. On a une série d'incendies criminels depuis un moment.<</append>>
+        			<<set $log.push(" Habituellement non, mais de plus en plus ces derniers temps. On a une série d'incendies criminels depuis un moment.")>>
+            		<<linkappend " ">>
+						<<append "#story-output">><br><br><strong>[[Un moment? Combien de temps exactement?]]</strong><</append>>
+    					<<append "#story-output">><br><br><strong>[[Une mafia incendiaire est derrière le coup?]]</strong><</append>>
+					<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Suivant2 {"position":"2025,250","size":"100,100"}
+Mentor
+ Ce que je veux dire c'est fait attention petit.
+ 
+<!--si affection > à je sais pas combien// 
+ J'aime bien les petits gars dans ton genre, tu me fais penser à mon fiston.
+ 
+(Vous avez un fils?)[[Vous avez un fils?]]
+(Il a mis la tête dans les flammes, lui aussi?)[[Il a mis la tête dans les flammes, lui aussi?]]
+
+<<set $log.push("<strong>Suivant2</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output"> Ce que je veux dire c'est fait attention petit.</div>
+<<set $log.push(" Ce que je veux dire c'est fait attention petit.")>>
+<span class="ecran-cliquable">
+	<<if $AffectMentor > 1>>
+    	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br> J'aime bien les petits gars dans ton genre, tu me fais penser à mon fiston.<</append>>
+        	<<set $log.push(" J'aime bien les petits gars dans ton genre, tu me fais penser à mon fiston.")>>
+            	<<linkappend " ">>
+					<<append "#story-output">><br><br><strong>[[Vous avez un fils?]]</strong><</append>>
+    				<<append "#story-output">><br><br><strong> [[Il a mis la tête dans les flammes, lui aussi?]]</strong><</append>>
+			<</linkappend>>
+        <</linkappend>>
+    <<else>>
+    	<<linkappend " ">>
+			<<append "#story-output">><br><br><strong>[[Vous avez un fils?]]</strong><</append>>
+    		<<append "#story-output">><br><br><strong> [[Il a mis la tête dans les flammes, lui aussi?]]</strong><</append>>
+		<</linkappend>>
+    <</if>>
+</span>
+<</nobr>>
+
+
+:: Suivant3 {"position":"2425,250","size":"100,100"}
+<<if $AffectMentor > 1 >>
+	<<set $log.push("<strong>Suivant3</strong>")>>
+	<<nobr>>
+	" Mentor"
+	<div id="story-output">Me donne pas de paperasse à faire et fais attention à toi.</div>
+	<<set $log.push("Me donne pas de paperasse à faire et fais attention à toi.")>>
+	<span class="ecran-cliquable">
+		<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Pompier 2</strong><</append>>
+        	<<append "#story-output">><br><br> Hey! C'est tête brûlée!<</append>>
+        	<<set $log.push(" Hey! C'est tête brûlée!")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        		<<append "#story-output">><br><br> POMPIER2 a fait sa formation avec vous, et apparemment il a entendu à propos de votre intervention.!<</append>>
+                 <<set $log.push(" POMPIER2 a fait sa formation avec vous, et apparemment il a entendu à propos de votre intervention.")>>
+             	<<linkappend " ">>
+					<<append "#story-output">><br><br><strong>[[facepalm Comment est-ce que tu es déjà au courant?]]</strong><</append>>
+    				<<append "#story-output">><br><br><strong>[[Ma tête n'a pas brûlé!]]</strong><</append>>
+				<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+	</span>
+	<</nobr>>
+<<else>>
+	<<set $log.push("<strong>Suivant3</strong>")>>
+	<<nobr>>
+	"Pompier 2"
+	<div id="story-output"> Hey! C'est tête brûlée!</div>
+	<<set $log.push(" Hey! C'est tête brûlée!")>>
+	<span class="ecran-cliquable">
+		<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Narration</strong><</append>>
+        	<<append "#story-output">><br><br> POMPIER2 a fait sa formation avec vous, et apparemment il a entendu à propos de votre intervention.!<</append>>
+        	<<set $log.push(" POMPIER2 a fait sa formation avec vous, et apparemment il a entendu à propos de votre intervention.")>>
+            <<linkappend " ">>
+				<<append "#story-output">><br><br><strong>[[facepalm Comment est-ce que tu es déjà au courant?]]</strong><</append>>
+    			<<append "#story-output">><br><br><strong>[[Ma tête n'a pas brûlé!]]</strong><</append>>
+			<</linkappend>>
+        <</linkappend>>
+	</span>
+	<</nobr>>
+<</if>>
+
+
+:: Suivant4 {"position":"2675,250","size":"100,100"}
+<<set $log.push("<strong>Suivant</strong>")>>
+<<nobr>>
+"Pompier 2"
+<div id="story-output"> J'aurais trop voulu voir ta tête! Faut que je demande à qu'on m'assigne à ton équipe.</div>
+<<set $log.push(" J'aurais trop voulu voir ta tête! Faut que je demande à qu'on m'assigne à ton équipe.")>>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br> Je préviens, j'ai un quota limité de bleu à ne pas laisser brûler par intervention.<</append>>
+        	<<set $log.push(" Je préviens, j'ai un quota limité de bleu à ne pas laisser brûler par intervention.")>>
+            <<linkappend " ">>
+        		<<append "#story-output">><br><br><strong>Pompier 2</strong><</append>>
+        		<<append "#story-output">><br><br> Et la limite est à combien? <</append>>
+        		<<set $log.push(" Et la limite est à combien? ")>>
+            	<<linkappend " ">>
+        			<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        			<<append "#story-output">><br><br> Elle est à 1, faudra choisir les jeunes.<</append>>
+        			<<set $log.push(" Elle est à 1, faudra choisir les jeunes.")>>
+            		<<linkappend " ">>
+						<<append "#story-output">><br><br><strong>[[Pas de problème, je le jetterais dans les flammes moi-même.]]</strong><</append>>
+    					<<append "#story-output">><br><br><strong>[[Choix facile, sauve le. Je veux garder mon honneur sauf.]]</strong><</append>>
+					<</linkappend>>
+        		<</linkappend>>
+        	<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Suivant5 {"position":"2925,250","size":"100,100"}
+Team de dév
+Merci d'avoir suivi notre introduction de jeu pour le GameJam! Vous n'aurez probablement jamais la suite, biz!
+
+Crédits 
+Développeur - Lucas OLS
+Scénariste, illustratrice des fonds - Ombeline CHAUD
+ illustratrice des personnages - Lézina KHADISSOVA
+
+
+:: Un moment? Combien de temps exactement? {"position":"1900,175","size":"100,100"}
+<<set $log.push("<strong>Un moment? Combien de temps exactement?</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Un moment? Combien de temps exactement?</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br>Quelques mois. On a quelques images, mais rien de concret. De mes derniers échanges avec l'inspecteur chargé de l'enquête, il suspecte que le pyromane agit seul.<</append>>
+        	<<set $log.push("Quelques mois. On a quelques images, mais rien de concret. De mes derniers échanges avec l'inspecteur chargé de l'enquête, il suspecte que le pyromane agit seul.")>>
+            <<linkappend " ">>
+				<<append "#story-output">><br><br><strong>[[Suivant ->Suivant2]]</strong><</append>>
+			<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Une mafia incendiaire est derrière le coup? {"position":"1900,325","size":"100,100"}
+
+<<set $log.push("<strong>Une mafia incendiaire est derrière le coup?</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Une mafia incendiaire est derrière le coup?</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br> Qu'est-ce qu'une mafia incendiaire est supposé être?<</append>>
+        	<<set $log.push(" Qu'est-ce qu'une mafia incendiaire est supposé être?")>>
+            <<linkappend " ">>
+                <<append "#story-output">>
+    				<br><br><strong>
+   						<<link "Une mafia qui aime commencer des incendies ?" "Suivant2">>
+        					<<set $AffectMentor += 1>>
+    					<</link>>
+    				</strong>
+				<</append>>
+				<<append "#story-output">>
+   					<br><br><strong>
+    					<<link "Une organisation secrète maléfique." "Suivant2">>
+        					<<set $AffectMentor += 2>>
+    					<</link>>
+    				</strong>
+				<</append>>
+			<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: Vous avez un fils? {"position":"2150,175","size":"100,100"}
+<<set $log.push("<strong>Vous avez un fils?</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">Vous avez un fils?</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Mentor</strong><</append>>
+        	<<append "#story-output">><br><br>Un peu plus vieux que toi je dirais. Un bon petit gars.<</append>>
+        	<<set $log.push("Un peu plus vieux que toi je dirais. Un bon petit gars.")>>
+            <<linkappend " ">>
+				<<append "#story-output">><br><br><strong>[[Il est pompier aussi?]]</strong><</append>>
+                <<append "#story-output">><br><br><strong>[[Quand j'étais gosse je disais que mon père était pompier,]]</strong><</append>>
+			<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: facepalm Comment est-ce que tu es déjà au courant? {"position":"2550,325","size":"100,100"}
+<<set $log.push("<strong>facepalm Comment est-ce que tu es déjà au courant?</strong>")>>
+<<nobr>>
+"Hero"
+<div id="story-output">facepalm Comment est-ce que tu es déjà au courant?</div>
+<span class="ecran-cliquable">
+	<<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Pompier 2</strong><</append>>
+        	<<append "#story-output">><br><br>Les rumeurs circulent vite ici.<</append>>
+        	<<set $log.push(" Les rumeurs circulent vite ici.")>>
+            <<linkappend " ">>
+				<<append "#story-output">><br><br><strong> [[Suivant ->Suivant4]]</strong><</append>>
+			<</linkappend>>
+        <</linkappend>>
+</span>
+<</nobr>>
+
+
+:: zone code {"position":"100,625","size":"100,100"}
+en gras : 
+
+<<append "#story-output">><br><br><strong>Sergent 1</strong><</append>>
+
+rajouter texte + mettre dans historique:
+
+        <<linkappend " ">>
+        	<<append "#story-output">><br><br><strong>Pompier1 sapeur</strong><</append>>
+        	<<append "#story-output">><br><br>Le petit nouveau!<</append>>
+        	<<set $log.push("Le petit nouveau!")>>
+        <</linkappend>>
+        
+debut + fin paragraphe:
+
+<<set $log.push("<strong>Caserne</strong>")>>
+<<nobr>>
+...
+<div id="story-output">...</div>
+<<set $log.push("...")>>
+<span class="ecran-cliquable">
+	...
+    ...
+    ...
+</span>
+<</nobr>>
+
+rajout lien
+
+<<linkappend " ">>
+	<<append "#story-output">><br><br><strong> [[""]]</strong><</append>>
+<</linkappend>>
+
+
+changer variable + autre nom passage
+
+
+
+
+:: StoryStylesheet [stylesheet]
+/* Rend le lien invisible et couvre tout l'écran */
+.ecran-cliquable a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: transparent;
+    color: transparent !important; /* Cache le texte du lien */
+    border: none !important;
+    text-decoration: none !important;
+    z-index: 9999;
+}
+
+/* Supprime les pointillés moches quand on clique */
+.ecran-cliquable a:focus {
+    outline: none;
+}
